@@ -44,7 +44,9 @@ const Captcha = () => {
         </button>
       ) : (
         <>
-          <>Choose the picture that has {captcha.correct + 1} in it</>
+          <p className="text-center mb-2">
+            Choose the picture that has {captcha.correct + 1} in it
+          </p>
           <Modal captcha={captcha} closeModal={closeModal} />
         </>
       )}
