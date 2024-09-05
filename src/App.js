@@ -38,7 +38,7 @@ const Captcha = () => {
       {!isOpen ? (
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="border-[1px] border-black bg-gray-200 py-2 px-1"
+          className="border-[1px] border-black bg-gray-200 py-2 px-1 rounded-xl shadow-[0_0_6px_rgba(0,0,0,0.5)]"
         >
           Verify that you're not chatGPT
         </button>
@@ -76,14 +76,3 @@ const Modal = ({ captcha, closeModal }) => {
   );
 };
 export default App;
-
-// <!-- Bu soru, kullanıcıya CAPTCHA testi sormak için bir bileşen oluşturmanızı gerektiriyor. CAPTCHA, genellikle otomatik botlardan ayırt edebilmek için kullanılan görsel veya metinsel zorluklardır.
-
-// Başlangıç kodunda altı farklı resmin URL'sini (1'den 6'ya kadar olan sayıların resimleri) bulacaksınız. Bileşen, bir buton renderlamalıdır. Bu butona tıklandığında, altı resim görüntülenmeli ve kullanıcıdan bu resimlerden birini seçmesi istenmelidir. Seçilmesi gereken sayı, her butona tıklandığında rastgele olarak belirlenmelidir.
-
-// Eğer kullanıcı doğru resmi seçerse, bileşen başlangıç durumuna dönmelidir ve sadece bir buton ve kapalı bir modal görüntülenmelidir.
-
-// Ancak eğer kullanıcı yanlış resmi seçerse, tarayıcıda bir uyarı mesajı görüntülenmelidir. Modal penceresi açık kalmalı ve kullanıcının tekrar denemesi için beklemelidir.
-
-// Bu bileşeni oluştururken, kullanıcıların resmi seçmelerini ve doğru/yanlış seçimleri ele alan bir mantık eklemeyi unutmayın. Aynı zamanda, bileşenin beklenen görünümünü ve davranışını gösteren `interview3.png` adlı resme de göz atabilirsiniz.
-//  -->
